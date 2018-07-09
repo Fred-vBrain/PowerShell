@@ -1,8 +1,8 @@
-$vCenter = "vcsa60vsan.nested.ad.vbrain.info"
-$depot = "/vmfs/volumes/NFS01/ESXi600-201803001.zip"
-$profile = "ESXi-6.0.0-20180304001-standard"
-$username = "administrator@vsphere.local"
-$password = "Digital1#"
+$vCenter = "vCenter FQDN"
+$depot = "VMFSFilePathToOfflineBundle"
+$profile = "ProfileName"
+$username = "vCenter Username"
+$password = "vCenter PW"
 
 Connect-VIServer -Server $vCenter -User $username -Password $password
 $esxhost = Get-VMHost
